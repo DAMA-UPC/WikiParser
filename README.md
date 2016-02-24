@@ -14,11 +14,23 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+REQUIREMENTS
+===
+WikiParser parses English Wikipedia dump files into CSV files. It requires the following 
+files:
+- enwiki-XXX-pages-articles.xml
+- enwiki-XXX-categorylinks.xml
+- enwiki-XXX-page.sql
+ 
+Files can be downloaded from https://dumps.wikimedia.org/enwiki/
+
+XXX gives information about the date of the dump. 
+
+
 CONFIGURE
 ===
 
-WikiParser parses English Wikipedia dump files into CSV files. WikiParser
-can be canfigured to parse the following data:
+WikiParser can be canfigured to parse the following data:
 
 - articleIds.csv: articleId, articleTitle  //Relates each article pageId with its title.
 - articlesText.csv: articleId, articleText //Relates each article with its plain text.
@@ -31,11 +43,9 @@ can be canfigured to parse the following data:
 In order to configure it, modify the exampleConfig.cfg file to indicate what information to retrieve
 and where to store it.
 
-In PAGE_ARTICLES_FILE specify where the XXX--pages-articles.xml is.
-In CSV_FOLDER specify where to store the results.
-
-Use GET_ARTICLES_TEXT, GET_ARTICLES_LINKS, GET_ARTICLES_REDIRECTS and GET_CATEGORIES_RELATIONS
-to indicate what information to parse.
+- In **PAGE_ARTICLES_FILE** specify where the XXX--pages-articles.xml is.
+- In **CSV_FOLDER specify** where to store the results.
+- Use **GET_ARTICLES_TEXT**, **GET_ARTICLES_LINKS**, **GET_ARTICLES_REDIRECTS** and **GET_CATEGORIES_RELATIONS** to indicate what information to parse.
 
 In order to run WikiParser, you need to install mysql into your system. 
 MySQL is used to store XXX-categorylinks.sql and XXX-pages.sql, which
