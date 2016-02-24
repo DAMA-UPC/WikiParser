@@ -14,9 +14,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-###########
-## USAGE ##  
-###########
+CONFIGURE
+===
+
 WikiParser parses English Wikipedia dump files into CSV files. WikiParser
 can be canfigured to parse the following data:
 
@@ -43,8 +43,17 @@ are required to extract the links to/of the categories.
 
 DATABASE info (user,pw and DB name) has to be in the exampleConfig.cfg
 
-Once exampleConfig.cfg is written. Be sure that mvn is in your PATH as well as Java 1.6, at least.
-The execute run.sh. 
+EXECUTE
+===
+Once exampleConfig.cfg is written. 
+Be sure that mvn is in your PATH as well as Java 1.6, at least.
+
+Execute run.sh 
+
+```
+./run.sh enwiki-XXX-categorylinks.sql /tmp/CL enwiki-XXX-page.sql /tmp/PG DB_U DB_PW DB_NAME
+```
+
 run.sh requires 7 pameters:
 - 1: enwiki-XXX-categorylinks.sql filepath.
 - 2: Temporal folder filespath for categorylinks, can be removed after the execution.
@@ -53,3 +62,4 @@ run.sh requires 7 pameters:
 - 5: DB user.
 - 6: DB password.
 - 7: DB name.
+
