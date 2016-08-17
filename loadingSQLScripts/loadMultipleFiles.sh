@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# WikiParser is free software developed by Joan Guisado-Gámez:
+# WikiParser is free software developed by Joan Guisado-Gamez:
 # you can redistribute it and/or modify it under the terms of
 # the GNU General Public License as published by the Free
 # Software Foundation, either version 3 of the License, or
