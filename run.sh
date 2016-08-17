@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# WikiParser is free software developed by Joan Guisado-Gámez: 
+# WikiParser is free software developed by Joan Guisado-Gamez: 
 # you can redistribute it and/or modify it under the terms of
 # the GNU General Public License as published by the Free 
 # Software Foundation, either version 3 of the License, or
@@ -29,7 +29,7 @@ echo "========================================================================="
 echo ""
 echo ""
 
-if [ "$#" -ne 8 ]; then
+if [ "$#" -ne 7 ]; then
 	echo "illegal number of parameters"
 	echo "1 - enwiki-XXX-categorylinks.sql file"
 	echo "2 - Category Links Temp Files Path"
