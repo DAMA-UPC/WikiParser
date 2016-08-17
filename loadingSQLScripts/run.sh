@@ -45,7 +45,7 @@
 #     echo "7 - DB name $7" 
 # fi
 
-./splitSQLScript.py $1 $2 #/data/joan/wikipedia/englishWikipedia/categorylinksTempFiles
-./splitSQLScript.py $3 $4 #/data/joan/wikipedia/englishWikipedia/pageTempFiles
+loadingSQLScripts/splitSQLScript.py $1 $2 #/data/joan/wikipedia/englishWikipedia/categorylinksTempFiles
+loadingSQLScripts/splitSQLScript.py $3 $4 #/data/joan/wikipedia/englishWikipedia/pageTempFiles
 
-nohup ./loadMultipleFiles.sh $5 $6 $7 $2 $4
+nohup loadingSQLScripts/loadMultipleFiles.sh $5 $6 $7 $2 $4
