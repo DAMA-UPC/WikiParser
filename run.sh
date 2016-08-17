@@ -49,7 +49,7 @@ else
 	echo "7 - DB name $7" 
 fi
 
-loadingSQLScripts/run.sh
+loadingSQLScripts/run.sh $1 $2 $3 $4 $5 $6 $7
 
 mvn install
 mvn exec:java
